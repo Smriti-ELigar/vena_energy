@@ -1,0 +1,74 @@
+
+body {
+    background-color: #e5e4e2;
+}
+.table-container {
+    max-height: 400px;
+    overflow-y: auto;
+}
+.table th, .table td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.modal-body {
+    max-height: 400px;
+    overflow-y: auto;
+}
+/* Add these styles to your existing <style> section */
+.modal-title {
+    text-align: center;
+}
+
+.modal-body .role-description {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.modal-body .permissions-table {
+    margin-top: 20px;
+}
+
+.modal-body .permissions-table th,
+.modal-body .permissions-table td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+#inviteUserBtn {
+    float: right;
+}
+.custom-link {
+    color: black; /* Initial color */
+    text-decoration: none; /* Remove underline */
+}
+
+.custom-link:hover {
+color: red; /* Color on hover */
+}
+/* Add these styles to your existing <style> section */
+.icon-eye {
+    color: black; /* Initial color */
+    text-decoration: none; /* Remove underline */
+}
+
+.icon-eye:hover {
+    color: #9baa14; /* Color on hover */
+}
+
+.icon-pencil {
+    color: black; /* Initial color */
+    text-decoration: none; /* Remove underline */
+}
+
+.icon-pencil:hover {
+    color: #9baa14; /* Color on hover */
+}
+input[type="radio"]:checked
+{
+    background-color: pink;
+    border-color: pink;
+}
+
+
+

@@ -1,0 +1,63 @@
+.turbine-container {
+    position:relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .label-box {
+    display: none;
+    position: absolute;
+    padding: 4px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+  }
+  .label-title {
+    font-weight: bold;
+    font-size: medium;
+  }
+  .label-content {
+    margin-top: 2px;
+    font-size: 14px;
+  }
+  /*
+  #hydraulic-unit { bottom:9px; left:85%; }
+  #hub-pitch { top: 38%; right: 1%; }
+  #generator { top: 1%; left: 65%; }
+  #converter { top: 50%; left: 1%; }
+  #wind-sensors { top: 15%; left: 20%; }
+  #nacelle {bottom: 9px;left: 53%;}*/
+  
+  #converter {
+    background-color: rgba(165, 4, 122, 0.2); 
+  }
+
+  #hub-pitch {
+    background-color:rgba(188, 50, 105, 0.3); 
+  }
+
+  #generator {
+    background-color:rgba(130, 185, 180, 0.5);
+  }
+
+  #wind-sensors{
+    background-color: rgba(205, 92,92,0.3);
+  }
+  #nacelle{
+    background-color: #9d44ac7a;
+  }
+  #hydraulic-unit{
+    background-color: rgba(23, 141, 214, 0.4);
+  }
+  
+  /* Canvas styling */
+  #canvas-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 50; /* Place it above the image but below the labels */
+    pointer-events: none; /* Allow clicks to pass through to the image */
+  }

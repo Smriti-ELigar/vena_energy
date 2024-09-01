@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users & Permissions</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    
+
+
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="card">
+            <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <h2 class="mb-0"><b>USERS AND PERMISSIONS</b></h2>
+                    <button class="btn btn-info" id="inviteUserBtn" data-bs-toggle="modal" data-bs-target="#inviteUserModal">INVITE USER</button>
+                </div>
+                <div class="table-container">
+                    <table class="table table-striped table-bordered mb-5">
+                        <thead class="table-secondary">
+                            <tr>
+                                <th>Email</th>
+                                <th>Role</th>
+                                <th>Registered On</th>
+                                <th>History</th>
+                                <th>Permissions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a href="#" class="custom-link" data-bs-toggle="modal" data-bs-target="#permissionsModal1">example1@venaenergy.com</a></td>
+                                <td>Manager / Active</td>
+                                <td>12-Jun-2024, 10:12:37</td>
+                                <td><a href="#" data-bs-toggle="modal" data-bs-target="#historyModal1"><i class="bi bi-eye icon-eye"></i></a></td>
+                                <td><a href="#" data-bs-toggle="modal" data-bs-target="#permissionsModal1"><i class="bi bi-pencil icon-pencil"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="custom-link" data-bs-toggle="modal" data-bs-target="#permissionsModal2">example2@venaenergy.com</a></td>
+                                <td>Manager / Active</td>
+                                <td>12-Jun-2024, 10:12:37</td>
+                                <td><a href="#" data-bs-toggle="modal" data-bs-target="#historyModal1"><i class="bi bi-eye icon-eye"></i></a></td>
+                                <td><a href="#" data-bs-toggle="modal" data-bs-target="#permissionsModal2"><i class="bi bi-pencil icon-pencil"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="custom-link" data-bs-toggle="modal" data-bs-target="#permissionsModal3">example3@venaenergy.com</a></td>
+                                <td>Manager / Active</td>
+                                <td>12-Jun-2024, 10:12:37</td>
+                                <td><a href="#" data-bs-toggle="modal" data-bs-target="#historyModal1"><i class="bi bi-eye icon-eye"></i></a></td>
+                                <td><a href="#" data-bs-toggle="modal" data-bs-target="#permissionsModal1"><i class="bi bi-pencil icon-pencil"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="custom-link" data-bs-toggle="modal" data-bs-target="#permissionsModal4">example4@venaenergy.com</a></td>
+                                <td>Manager / Active</td>
+                                <td>12-Jun-2024, 10:12:37</td>
+                                <td><a href="#" data-bs-toggle="modal" data-bs-target="#historyModal1"><i class="bi bi-eye icon-eye"></i></a></td>
+                                <td><a href="#" data-bs-toggle="modal" data-bs-target="#permissionsModal1"><i class="bi bi-pencil icon-pencil"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="custom-link" data-bs-toggle="modal" data-bs-target="#permissionsModal5">example5@venaenergy.com</a></td>
+                                <td>Manager / Active</td>
+                                <td>12-Jun-2024, 10:12:37</td>
+                                <td><a href="#" data-bs-toggle="modal" data-bs-target="#historyModal1"><i class="bi bi-eye icon-eye"></i></a></td>
+                                <td><a href="#" data-bs-toggle="modal" data-bs-target="#permissionsModal1"><i class="bi bi-pencil icon-pencil"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="custom-link" data-bs-toggle="modal" data-bs-target="#permissionsModal6">example6@venaenergy.com</a></td>
+                                <td>Manager / Active</td>
+                                <td>12-Jun-2024, 10:12:37</td>
+                                <td><a href="#" data-bs-toggle="modal" data-bs-target="#historyModal1"><i class="bi bi-eye icon-eye"></i></a></td>
+                                <td><a href="#" data-bs-toggle="modal" data-bs-target="#permissionsModal1"><i class="bi bi-pencil icon-pencil"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="custom-link" data-bs-toggle="modal" data-bs-target="#permissionsModal7">example7@venaenergy.com</a></td>
+                                <td>Manager / Active</td>
+                                <td>12-Jun-2024, 10:12:37</td>
+                                <td><a href="#" data-bs-toggle="modal" data-bs-target="#historyModal1"><i class="bi bi-eye icon-eye"></i></a></td>
+                                <td><a href="#" data-bs-toggle="modal" data-bs-target="#permissionsModal1"><i class="bi bi-pencil icon-pencil"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="custom-link" data-bs-toggle="modal" data-bs-target="#permissionsModal8">example8@venaenergy.com</a></td>
+                                <td>Manager / Active</td>
+                                <td>12-Jun-2024, 10:12:37</td>
+                                <td><a href="#" data-bs-toggle="modal" data-bs-target="#historyModal1"><i class="bi bi-eye icon-eye"></i></a></td>
+                                <td><a href="#" data-bs-toggle="modal" data-bs-target="#permissionsModal1"><i class="bi bi-pencil icon-pencil"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="custom-link" data-bs-toggle="modal" data-bs-target="#permissionsModal9">example9@venaenergy.com</a></td>
+                                <td>Manager / Active</td>
+                                <td>12-Jun-2024, 10:12:37</td>
+                                <td><a href="#" data-bs-toggle="modal" data-bs-target="#historyModal1"><i class="bi bi-eye icon-eye"></i></a></td>
+                                <td><a href="#" data-bs-toggle="modal" data-bs-target="#permissionsModal1"><i class="bi bi-pencil icon-pencil"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="custom-link" data-bs-toggle="modal" data-bs-target="#permissionsModal10">example10@venaenergy.com</a></td>
+                                <td>Manager / Active</td>
+                                <td>12-Jun-2024, 10:12:37</td>
+                                <td><a href="#" data-bs-toggle="modal" data-bs-target="#historyModal1"><i class="bi bi-eye icon-eye"></i></a></td>
+                                <td><a href="#" data-bs-toggle="modal" data-bs-target="#permissionsModal1"><i class="bi bi-pencil icon-pencil"></i></a></td>
+                            </tr>
+                            
+                            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+   
+<!--Modal for invite user-->
+<div class="modal fade" id="inviteUserModal" tabindex="-1" aria-labelledby="inviteUserModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header bg-info">
+                <h5 class="modal-title" id="inviteUserModalLabel">INVITE USER</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="inviteForm">
+                    <div class="form-group mb-4">
+                        <input type="email" class="form-control" id="email" placeholder="Enter Email" required>
+                    </div>
+                    <div class="role-description">
+                        <i class="bi bi-person-circle" style="color: pink; font-size: 2rem;"></i>
+                        <h4>Manager</h4>
+                        <p>
+                            Managers can view/edit data based on permissions they have been granted.<br>
+                            Manager cannot create/delete other Managers.<br>
+                            Manager cannot modify permissions of other Managers.
+                        </p>
+                    </div>
+                    <div class="permissions-table">
+                        <table class="table table-bordered">
+                            <thead class="table-light">
+                                <tr>
+                                    <th>Module</th>
+                                    <th>No Access</th>
+                                    <th>View Only</th>
+                                    <th>View & Edit</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>SOP</td>
+                                    <td>
+                                        <div class="form-check form-check-inline"> 
+                                        <input type="radio" class="form-check-input red" name="SOP" value="No Access">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="form-check form-check-inline"> 
+                                        <input type="radio" class="form-check-input red" name="SOP" value="View Only">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="form-check form-check-inline"> 
+                                        <input type="radio" class="form-check-input red" name="SOP" value="View & Edit">
+                                        </div>
+                                    </td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>TARFS</td>
+                                    <td>
+                                        <div class="form-check form-check-inline"> 
+                                        <input type="radio" class="form-check-input red" name="TARFS" value="No Access">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="form-check form-check-inline"> 
+                                        <input type="radio" class="form-check-input red" name="TARFS" value="View Only">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="form-check form-check-inline"> 
+                                        <input type="radio" class="form-check-input red" name="TARFS" value="View & Edit">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <!--<tr>
+                                    <td>SOP1</td>
+                                    <td>
+                                        <div class="form-check form-check-inline"> 
+                                        <input type="radio" class="form-check-input red" name="SOP1" value="No Access">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="form-check form-check-inline"> 
+                                        <input type="radio" class="form-check-input red" name="SOP1" value="View Only">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="form-check form-check-inline"> 
+                                        <input type="radio" class="form-check-input red" name="SOP1" value="View & Edit">
+                                        </div>
+                                    </td>
+                                    
+                                </tr>
+                                <tr>-->
+                                    <!--<td>TARFS1</td>
+                                    <td>
+                                        <div class="form-check form-check-inline"> 
+                                        <input type="radio" class="form-check-input red" name="TARFS1" value="No Access">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="form-check form-check-inline"> 
+                                        <input type="radio" class="form-check-input red" name="TARFS1" value="View Only">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="form-check form-check-inline"> 
+                                        <input type="radio" class="form-check-input red" name="TARFS1" value="View & Edit">
+                                        </div>
+                                    </td>-->
+                                    
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="text-center mt-4">
+                        <button type="submit" class="btn btn-info">INVITE</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- Modal for viewing permissions for user 1 -->
+    <div class="modal fade" id="permissionsModal1" tabindex="-1" aria-labelledby="permissionsModalLabel1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-info">
+                    <h5 class="modal-title" id="permissionsModalLabel1">Permissions for example1@venaenergy.com</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="permissionsForm1">
+                        <div class="form-group mb-4">
+                            <input type="email" class="form-control" id="permissionsEmail1" value="example1@venaenergy.com" readonly>
+                        </div>
+                        <div class="permissions-table">
+                            <table class="table table-bordered">
+                                <thead class="table-light">
+                                    <tr>
+                                        <th>Module</th>
+                                        <th>No Access</th>
+                                        <th>View Only</th>
+                                        <th>View & Edit</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>SOP</td>
+                                        <td>
+                                            <div class="form-check form-check-inline"> 
+                                                <input type="radio" class="form-check-input" name="SOP1" value="No Access">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check form-check-inline"> 
+                                                <input type="radio" class="form-check-input" name="SOP1" value="View Only" checked>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check form-check-inline"> 
+                                                <input type="radio" class="form-check-input" name="SOP1" value="View & Edit">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>TARFS</td>
+                                        <td>
+                                            <div class="form-check form-check-inline"> 
+                                                <input type="radio" class="form-check-input" name="TARFS1" value="No Access" checked>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check form-check-inline"> 
+                                                <input type="radio" class="form-check-input" name="TARFS1" value="View Only">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check form-check-inline"> 
+                                                <input type="radio" class="form-check-input" name="TARFS1" value="View & Edit">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <!-- Add more permissions here -->
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="text-center mt-4">
+                            <button type="submit" class="btn btn-info">SAVE</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for viewing permissions for user 2 -->
+    <div class="modal fade" id="permissionsModal2" tabindex="-1" aria-labelledby="permissionsModalLabel2" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-info">
+                    <h5 class="modal-title" id="permissionsModalLabel2">Permissions for example2@venaenergy.com</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="permissionsForm2">
+                        <div class="form-group mb-4">
+                            <input type="email" class="form-control" id="permissionsEmail2" value="example2@venaenergy.com" readonly>
+                        </div>
+                        <div class="permissions-table">
+                            <table class="table table-bordered">
+                                <thead class="table-light">
+                                    <tr>
+                                        <th>Module</th>
+                                        <th>No Access</th>
+                                        <th>View Only</th>
+                                        <th>View & Edit</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>SOP</td>
+                                        <td>
+                                            <div class="form-check form-check-inline"> 
+                                                <input type="radio" class="form-check-input" name="SOP2" value="No Access">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check form-check-inline"> 
+                                                <input type="radio" class="form-check-input" name="SOP2" value="View Only">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check form-check-inline"> 
+                                                <input type="radio" class="form-check-input" name="SOP2" value="View & Edit" checked>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>TARFS</td>
+                                        <td>
+                                            <div class="form-check form-check-inline"> 
+                                                <input type="radio" class="form-check-input" name="TARFS2" value="No Access">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check form-check-inline"> 
+                                                <input type="radio" class="form-check-input" name="TARFS2" value="View Only" checked>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check form-check-inline"> 
+                                                <input type="radio" class="form-check-input" name="TARFS2" value="View & Edit">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <!-- Add more permissions here -->
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="text-center mt-4">
+                            <button type="submit" class="btn btn-info">SAVE</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--since backend not added given example data for example 1 and 2-->
+
+    
+<!-- Modal for viewing history -->
+<div class="modal fade" id="historyModal1" tabindex="-1" aria-labelledby="historyModalLabel1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header bg-info">
+                <h5 class="modal-title" id="historyModalLabel1">History for example1@venaenergy.com</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <table class="table table-bordered">
+                    <thead class="table-light">
+                        <tr>
+                            <th>Date</th>
+                            <th>Action</th>
+                            <th>By</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>12-Jun-2024</td>
+                            <td>Login</td>
+                            <td>example1@venaenergy.com</td>
+                        </tr>
+                        <tr>
+                            <td>13-Jun-2024</td>
+                            <td>Edit</td>
+                            <td>example1@venaenergy.com</td>
+                        </tr>
+                        <tr>
+                            <td>14-Jun-2024</td>
+                            <td>View Only</td>
+                            <td>example1@venaenergy.com</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<!--since backend not connected given example history to be viewed for example 1-->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <!--
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>-->
+
+</body>
+</html>

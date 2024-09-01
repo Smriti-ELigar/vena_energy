@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Turbine Components</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="turbine-container">
+    <img id="turbine-image" src="wind1.jpg" class="img-fluid" alt="Schematic of a turbine with various labeled components.">
+    
+    <!-- Canvas element -->
+    <canvas id="canvas-overlay"></canvas>
+
+    <div id="hydraulic-unit" class="label-box"aria-label="Hydraulic Unit">
+      <div class="label-title">Hydraulic Unit</div>
+      <div class="label-content">Hydraulic Temperature: - °C</div>
+      <div class="label-content">Hydraulic Pressure: 230.2 Bar</div>
+    </div>
+    <div id="hub-pitch" class="label-box"aria-label="hub-pitch">
+      <div class="label-title">Hub & Pitch</div>
+      <div class="label-content">Pitch Angle: -2.30 °</div>
+      <div class="label-content">Rotor Speed: 12.00 RPM</div>
+    </div>
+    <div id="generator" class="label-box"aria-label="generator">
+      <div class="label-title">Generator</div>
+      <div class="label-content">Temp (Driven End): - °C</div>
+      <div class="label-content">Temp (Non-Driven End): - °C</div>
+      <div class="label-content">Winding Temp 1: - °C</div>
+      <div class="label-content">Winding Temp 2: - °C</div>
+      <div class="label-content">Winding Temp 3: - °C</div>
+      <div class="label-content">Winding Temp 4: - °C</div>
+      <div class="label-content">Winding Temp 5: - °C</div>
+      <div class="label-content">Winding Temp 6: - °C</div>
+      <div class="label-content">Speed: 12.00 RPM</div>
+    </div>
+    <div id="nacelle" class="label-box"aria-label="nacelle">
+      <div class="label-title">Nacelle</div>
+      <div class="label-content">Temperature: - °C</div>
+      <div class="label-content">Ambient Temperature: 29.20 °C</div>
+      <div class="label-content">Direction: 204.98 °</div>
+    </div>
+    <div id="converter" class="label-box"aria-label="converter">
+      <div class="label-title">Converter(Grid)</div>
+      <div class="label-content">Active Power: 564.20 kW</div>
+      <div class="label-content">Reactive Power: -29.80 kW</div>
+      <div class="label-content">Voltage: 397.80 V</div>
+      <div class="label-content">Current: 667.40 A</div>
+      <div class="label-content">Frequency: 60.01 Hz</div>
+      <div class="label-content">Power Factor: -</div>
+    </div>
+    <div id="wind-sensors" class="label-box"aria-label="wind-sensors">
+      <div class="label-title">Wind Sensors</div>
+      <div class="label-content">Wind Speed: 6.11 m/s</div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

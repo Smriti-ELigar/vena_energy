@@ -1,0 +1,215 @@
+body {
+  background-color: #e5e4e2;
+}
+.container {
+  padding: 10px;
+  max-width: 1000px; 
+}
+.card {
+  margin: 2px;
+  padding: 9px;
+  font-size: 14px;
+}
+
+.card-header, .card-body {
+  padding: 1px 3px; 
+}
+
+.stats {
+  font-size: 13px; 
+}
+
+.info-block-container {
+    border-left: 1px solid #dee2e6;
+    border-right: 1px solid #dee2e6;
+}
+
+.info-block {
+    text-align: center;
+    padding: 0 15px;
+    position: relative;
+    width: 100%;
+}
+
+.info-block:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    height: 50%;
+    border-right: 1px solid #dee2e6;
+    transform: translateY(-50%);
+}
+
+
+.info-block p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+.badge {
+    padding: 10px;
+    font-size: 1em;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.progress-wrapper {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0; 
+}
+.progress {
+  flex: 1;
+  position: relative;
+  background-color: white;
+  margin: 0; 
+  padding: 0;
+}
+
+.progress-bar {
+  position: relative;
+  height: 100%;
+}
+.progress-label {
+  margin-left: 10px;
+}
+
+
+#progress-bar-1 {
+  background-color: lightblue;
+}
+#progress-bar-2 {
+  background-color: lightgreen;
+}
+#progress-bar-3 {
+  background-color: lightblue;
+}
+#progress-bar-4 {
+  background-color: lightgreen;
+}
+#progress-bar-5 {
+  background-color: lightblue;
+}
+#progress-bar-6 {
+  background-color: lightgreen;
+}
+#progress-bar-2-1{
+  background-color: lightblue;
+}
+#progress-bar-2-2{
+  background-color: lightgreen;
+}
+#progress-bar-2-3{
+  background-color: lightblue;
+}
+#progress-bar-2-4{
+  background-color: lightgreen;
+}
+#progress-bar-3-1-1{
+  background-color: lightblue;
+}
+#progress-bar-3-1-2{
+  background-color: lightgreen; 
+}
+#progress-bar-3-2-1{
+  background-color: lightblue;
+}
+#progress-bar-3-2-2{
+  background-color: lightgreen; 
+}
+#progress-bar-3-3-1{
+  background-color: lightblue;
+}
+#progress-bar-3-3-2{
+  background-color: lightgreen; 
+}
+#progress-bar-3-4-1{
+  background-color: lightblue;
+}
+#progress-bar-3-4-2{
+  background-color: lightgreen; 
+}
+#progress-bar-3-5-1{
+  background-color: lightblue;
+}
+#progress-bar-3-5-2{
+  background-color: lightgreen; 
+}
+#progress-bar-3-6-1{
+  background-color: lightblue;
+}
+#progress-bar-3-6-2{
+  background-color: lightgreen; 
+}
+#progress-bar-3-7-1{
+  background-color: lightblue;
+}
+#progress-bar-3-7-2{
+  background-color: lightgreen; 
+}
+#progress-bar-3-8-1{
+  background-color: lightblue;
+}
+#progress-bar-3-8-2{
+  background-color: lightgreen; 
+}
+#progress-bar-3-9-1{
+  background-color: lightblue;
+}
+#progress-bar-3-9-2{
+  background-color: lightgreen; 
+}
+#progress-bar-3-10-1{
+  background-color: lightblue;
+}
+#progress-bar-3-10-2{
+  background-color: lightgreen; 
+}
+#progress-bar-3-11-1{
+  background-color: lightblue;
+}
+#progress-bar-3-11-2{
+  background-color: lightgreen; 
+}
+#progress-bar-3-12-1{
+  background-color: lightblue;
+}
+#progress-bar-3-12-2{
+  background-color: lightgreen; 
+}
+#progress-bar-3-13-1{
+  background-color: lightblue;
+}
+#progress-bar-3-13-2{
+  background-color: lightgreen; 
+}
+
+
+#turbine-title {
+  margin-bottom: 10px;
+}
+#turbine-body{
+  padding: 0; 
+}
+.card-header {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  z-index: 1;
+  background-color: transparent;
+}
+
+
+  
+
+
+
+
